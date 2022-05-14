@@ -29,14 +29,14 @@
   }
 }
 
-@each $color, $shades in $colors{
-  @each $shade, $value in $shades {
-    .text-#{$color}-#{$shade} {
-      color: $value;
-    }
-    .bg-#{$color}-#{$shade} {
-      background-color: $value;
-    }
+
+
+@each $color, $value in $colors{
+  .text-#{$color} {
+    color: $value;
+  }
+  .bg-#{$color} {
+    background-color: $value;
   }
 }
 
